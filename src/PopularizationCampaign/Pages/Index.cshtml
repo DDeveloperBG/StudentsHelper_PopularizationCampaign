@@ -1,0 +1,58 @@
+﻿@page
+@using PopularizationCampaign.ViewModels.Index
+@model IndexModel
+@{
+    ViewData["Title"] = "Начало";
+}
+
+@section Css {
+    <link rel="stylesheet" href="~/css/index.min.css" asp-append-version="true">
+}
+
+<div class="masthead">
+    <div class="masthead-content text-white">
+        <div class="container-fluid px-4 px-lg-0">
+            <h1 class="fst-italic lh-1 mb-4">Нашият сайт ще бъде готов скоро!</h1>
+            <p class="mb-4" style="text-align: justify;">Работим усилено, за да завършим разработката на този сайт. Запишете се по-долу, за да получавате актуализации и да бъдете уведомени, когато стартираме!</p>
+
+            <form id="contactForm" method="post">
+                <div class="form-group input-group-newsletter">
+                    <input asp-for="@Model.Input.Email"
+                           class="form-control"
+                           placeholder="Въведете своя Имейл" />
+                    <span asp-validation-for="@Model.Input.Email" class="text-danger"></span>
+                </div>
+                <div class="row form-group h4 mt-4 mb-0 ms-2">
+                    <div class="form-check col col-md-4">
+                        <input name="Input.UserType"
+                               type="radio"
+                               value="@UserType.Ученик"
+                               class="form-check-input" />
+                        <label class="form-check-label" for="Input.UserType">@UserType.Ученик.ToString()</label>
+                    </div>
+                    <div class="form-check col col-md-4">
+                        <input name="Input.UserType"
+                               type="radio"
+                               value="@UserType.Учител"
+                               class="form-check-input" />
+                        <label class="form-check-label" for="Input.UserType">@UserType.Учител.ToString()</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <span asp-validation-for="@Model.Input.UserType" class="text-danger"></span>
+                </div>
+                <input type="submit" id="submit-btn" class="btn btn-primary" value="Уведоми Ме!" />
+            </form>
+
+            <div class="mt-3">
+                <a href="/About">Научете повече за нас</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="social-icons">
+    <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+        <a class="btn btn-dark m-3" target="_blank" href="https://www.facebook.com/studentshelper.net"><i class="fab fa-facebook-f"></i></a>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="Q1VrDLmi6xCtg_bhZv_HVt5kR5j9rzRWVW13gPc9zxM" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   
+    <meta name="author" content="Daniel Yordanov">
+    <meta name="description" content=@Html.Raw("\"" + "StudentsHelper има за цел да помогне на учениците с техните домашни, уроци и т.н. чрез мигновени консултации по конкретна тема с учител, специалист в областта." + "\"")>
+    <title>StudentsHelper</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="~/favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favIcon/favicon-16x16.png">
+    <link rel="manifest" href="~/favIcon/site.webmanifest">
+    <link rel="mask-icon" href="~/favIcon/safari-pinned-tab.svg" color="#1ed760">
+    <meta name="apple-mobile-web-app-title" content="Students Helper">
+    <meta name="application-name" content="Students Helper">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-config" content="browserconfig.xml" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+   
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+    @RenderSection("Css", false)
+</head>
+<body>
+    <div id="content-wrapper">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

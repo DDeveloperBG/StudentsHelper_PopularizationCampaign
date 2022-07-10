@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:popularization-campaign-server.database.windows.net",
+      "dynamicId": null
+    }
+  }
+}
